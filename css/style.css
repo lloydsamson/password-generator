@@ -1,0 +1,862 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+*,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #040F2D;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav {
+  height: 72px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 140px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins";
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a h1 {
+  color: #DDE1F4;
+  background: none;
+}
+
+.nav a h1 span {
+  background: none;
+  color: #23B6F6;
+  padding: 0px;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  padding-left: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Poppins";
+  margin-top: 180px;
+  overflow: visible;
+  z-index: -2;
+}
+
+.container .left-container {
+  width: 600px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 3;
+  background: none;
+}
+
+.container .left-container h1 {
+  color: #DDE1F4;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  background: none;
+  width: 80%;
+}
+
+.container .left-container p {
+  color: #4E5D90;
+  margin-bottom: 50px;
+  background: none;
+}
+
+.container .left-container button {
+  width: 251px;
+  height: 52px;
+  background: #23B6F6;
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #fafafa;
+  cursor: pointer;
+  margin-top: -10px;
+  font-size: 1.1rem;
+}
+
+.container .left-container button:focus {
+  outline: none;
+}
+
+.container .left-container button:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(#537CE5), to(#46CDDF));
+  background: linear-gradient(to bottom right, #537CE5, #46CDDF);
+}
+
+.container .right-container {
+  width: 600px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -120px;
+  z-index: 2;
+  background: none;
+}
+
+.container .right-container img {
+  background: none;
+}
+
+.container #bilogbilog {
+  position: absolute;
+  width: 750px;
+  height: 750px;
+  background: none;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  -webkit-animation: spin 120s linear infinite;
+          animation: spin 120s linear infinite;
+}
+
+.container-pass {
+  width: 100%;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: visible;
+}
+
+.container-pass .inner-container-pass {
+  width: 35%;
+  height: 100%;
+  background: #091642;
+  border-radius: 10px;
+  font-family: "Poppins";
+}
+
+.container-pass .inner-container-pass form {
+  background: none;
+}
+
+.container-pass .inner-container-pass form .header {
+  width: 100%;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  margin-top: 10px;
+}
+
+.container-pass .inner-container-pass form .header h1 {
+  background: none;
+  color: #DDE1F4;
+  font-size: 1.8rem;
+}
+
+.container-pass .inner-container-pass form .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  margin-top: 30px;
+  font-family: "Poppins";
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: visible;
+}
+
+.container-pass .inner-container-pass form .row .inner-row {
+  width: 80%;
+  height: 53px;
+  background: none;
+  overflow: visible;
+}
+
+.container-pass .inner-container-pass form .row .inner-row label {
+  background: none;
+  color: #354b77;
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+
+.container-pass .inner-container-pass form .row .inner-row label span {
+  background: none;
+}
+
+.container-pass .inner-container-pass form .row .inner-row input[type="text"] {
+  width: 100%;
+  height: 100%;
+  background: #0F295D;
+  border: none;
+  border-radius: 10px;
+  color: #DDE1F4;
+  font-family: "Poppins";
+  font-size: 16px;
+  padding: 0px 20px;
+}
+
+.container-pass .inner-container-pass form .row .inner-row input:focus {
+  outline: none;
+}
+
+.container-pass .inner-container-pass form .row .inner-row .for-range {
+  width: 100%;
+  height: 100%;
+  background: #0F295D;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-pass .inner-container-pass form .row .inner-row .for-range input[type="range"] {
+  width: 90%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  color: #DDE1F4;
+  font-family: "Poppins";
+  font-size: 16px;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  margin-top: 50px;
+  font-family: "Poppins";
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: visible;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row {
+  width: 80%;
+  height: 53px;
+  background: none;
+  overflow: visible;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting {
+  width: 100%;
+  height: 100%;
+  background: #0F295D;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting p {
+  background: none;
+  color: #44639c;
+  font-family: "Poppins";
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 27px;
+  /* Rounded sliders */
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #21407e;
+  -webkit-transition: .4s;
+  transition: .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch .slider.round {
+  border-radius: 34px;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch .slider.round:before {
+  border-radius: 50%;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(5) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  margin-top: 220px;
+  font-family: "Poppins";
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: visible;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(5) .inner-row {
+  width: 80%;
+  height: 53px;
+  background: none;
+  overflow: visible;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(5) .inner-row input {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: #23B6F6;
+  border-radius: 10px;
+  border: none;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.container-pass .inner-container-pass form .row:nth-child(5) .inner-row input:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(#537CE5), to(#46CDDF));
+  background: linear-gradient(to bottom right, #537CE5, #46CDDF);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 812px) {
+  *,
+  body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .nav {
+    height: 72px;
+    width: 100%;
+    padding: 0px 30px;
+    font-family: "Poppins";
+  }
+  .nav a {
+    text-decoration: none;
+  }
+  .nav a h1 {
+    color: #DDE1F4;
+    background: none;
+    font-size: 2rem;
+  }
+  .nav a h1 span {
+    background: none;
+    color: #23B6F6;
+    padding: 0px;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    padding: 0px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Poppins";
+    overflow: visible;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    z-index: -2;
+  }
+  .container .left-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 3;
+    background: none;
+    margin-top: 40px;
+  }
+  .container .left-container h1 {
+    color: #DDE1F4;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    background: none;
+  }
+  .container .left-container p {
+    color: #4E5D90;
+    margin-bottom: 50px;
+    background: none;
+  }
+  .container .left-container button {
+    width: 100%;
+    height: 52px;
+    background: #23B6F6;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: #fafafa;
+    cursor: pointer;
+    margin-top: -10px;
+    font-size: 1.1rem;
+  }
+  .container .left-container button:focus {
+    outline: none;
+  }
+  .container .left-container button:hover {
+    background: -webkit-gradient(linear, left top, right bottom, from(#537CE5), to(#46CDDF));
+    background: linear-gradient(to bottom right, #537CE5, #46CDDF);
+  }
+  .container .right-container {
+    background: none;
+    width: 300px;
+    height: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+    margin-top: -250px;
+  }
+  .container .right-container img {
+    background: none;
+    width: 70%;
+  }
+  .container #bilogbilog {
+    display: none;
+    width: 70%;
+    height: auto;
+    background: none;
+    z-index: 1;
+    -webkit-animation: spin 120s linear infinite;
+            animation: spin 120s linear infinite;
+  }
+  .container-pass {
+    width: 100%;
+    height: 630px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: visible;
+  }
+  .container-pass .inner-container-pass {
+    width: 95%;
+    height: 100%;
+    background: #091642;
+    border-radius: 10px;
+    font-family: "Poppins";
+  }
+  .container-pass .inner-container-pass form {
+    background: none;
+  }
+  .container-pass .inner-container-pass form .header {
+    width: 100%;
+    height: 52px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    margin-top: 10px;
+  }
+  .container-pass .inner-container-pass form .header h1 {
+    background: none;
+    color: #DDE1F4;
+    font-size: 1.5rem;
+  }
+  .container-pass .inner-container-pass form .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    margin-top: 30px;
+    font-family: "Poppins";
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: visible;
+  }
+  .container-pass .inner-container-pass form .row .inner-row {
+    width: 90%;
+    height: 53px;
+    background: none;
+    overflow: visible;
+  }
+  .container-pass .inner-container-pass form .row .inner-row label {
+    background: none;
+    color: #354b77;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+  .container-pass .inner-container-pass form .row .inner-row label span {
+    background: none;
+  }
+  .container-pass .inner-container-pass form .row .inner-row input[type="text"] {
+    width: 100%;
+    height: 100%;
+    background: #0F295D;
+    border: none;
+    border-radius: 10px;
+    color: #DDE1F4;
+    font-family: "Poppins";
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+  .container-pass .inner-container-pass form .row .inner-row input:focus {
+    outline: none;
+  }
+  .container-pass .inner-container-pass form .row .inner-row .for-range {
+    width: 100%;
+    height: 100%;
+    background: #0F295D;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-pass .inner-container-pass form .row .inner-row .for-range input[type="range"] {
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    color: #DDE1F4;
+    font-family: "Poppins";
+    font-size: 16px;
+    padding: 0px 20px;
+    cursor: pointer;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    margin-top: 50px;
+    font-family: "Poppins";
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: visible;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row {
+    width: 90%;
+    height: 53px;
+    background: none;
+    overflow: visible;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting {
+    width: 100%;
+    height: 100%;
+    background: #0F295D;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting p {
+    background: none;
+    color: #44639c;
+    font-family: "Poppins";
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 27px;
+    /* Rounded sliders */
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #21407e;
+    -webkit-transition: .4s;
+    transition: .4s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch input:checked + .slider {
+    background-color: #2196F3;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch input:focus + .slider {
+    -webkit-box-shadow: 0 0 1px #2196F3;
+            box-shadow: 0 0 1px #2196F3;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch .slider.round {
+    border-radius: 34px;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(4) .inner-row .for-setting .switch .slider.round:before {
+    border-radius: 50%;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(5) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    margin-top: 220px;
+    font-family: "Poppins";
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: visible;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(5) .inner-row {
+    width: 90%;
+    height: 53px;
+    background: none;
+    overflow: visible;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(5) .inner-row input {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: #23B6F6;
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .container-pass .inner-container-pass form .row:nth-child(5) .inner-row input:hover {
+    background: -webkit-gradient(linear, left top, right bottom, from(#537CE5), to(#46CDDF));
+    background: linear-gradient(to bottom right, #537CE5, #46CDDF);
+  }
+}
+/*# sourceMappingURL=style.css.map */
